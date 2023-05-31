@@ -24,7 +24,7 @@ public:
         int n=arr.size();
         sort(arr.begin(),arr.end());
         int luck=-1;
-        for(int i=n-1;i>0;i--){
+        for(int i=n-1;i>=0;i--){
             if(arr[i]==count(arr.begin(),arr.end(),arr[i])){
                 luck=arr[i];
                 return luck;
